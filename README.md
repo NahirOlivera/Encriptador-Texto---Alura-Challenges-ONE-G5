@@ -39,7 +39,7 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 
 ## Imágenes
 
-![Captura de pantalla del proyecto](/screenshots/screenshot.png)
+![Captura de pantalla del proyecto](/img/Encriptador.png)
 
 ## GitHub Page
 
