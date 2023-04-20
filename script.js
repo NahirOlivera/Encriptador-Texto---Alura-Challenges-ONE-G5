@@ -27,7 +27,7 @@ function btnDesencriptar(){
 	mensaje.value = textoEncriptado;
 	mensaje.style.backgroundImage = "none";
 	inputTexto.value = "";
-	let outputTexto = document.querySelector(".output-text").focus();
+	document.querySelector(".output-text").focus();
 }
 
 function desencriptar(stringDesencriptado) {
