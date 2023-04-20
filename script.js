@@ -7,6 +7,7 @@ function btnEncriptar(){
 	mensaje.value = textoEncriptado;
 	mensaje.style.backgroundImage = "none";
 	inputTexto.value = "";
+	let outputTexto = document.querySelector(".output-text").focus();
 }
 
 function encriptar(stringEncriptado) {
@@ -42,7 +43,7 @@ function desencriptar(stringDesencriptado) {
 
 function copiar(){
 	mensaje.select();
-	textoCopiado = navigator.clipboard.writeText(mensaje.value);
+	document.getElementById("myHiddenInput").value = mensaje.value;
 	mensaje.value = "";
 	mensaje.style.backgroundImage = "url('./img/muñeco.png')";
 	let inputTexto = document.querySelector(".input-text").focus();
@@ -51,6 +52,6 @@ function copiar(){
 
 function pegar() {
   navigator.clipboard.readText().then(texto => {
-    inputTexto.value = texto;
+    inputTexto.value = document.getElementById("myHiddenInput").value;
   });
 }
