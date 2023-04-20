@@ -32,10 +32,13 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
     Adicional a las funcionalidades solicitadas generé un botón que nos permite pegar el contenido copiado. Además genere el modo responsivo para que pueda ser     utilizado en distintos dispositivos
     
 - Tecnologías utilizadas:
-     - HTML
+     - HTML 
      - JAVASCRIPT
      - CSS
      - GIT HUB
+
+
+     <img src="/img/html.svg" alt="logo HTML" width="50" height="50">     <img src="/img/js.svg" alt="logo JavaScript" width="50" height="50">       <img src="/img/css3.svg" alt="logo CSS" width="50" height="50">
 
 ## Imágenes
 
