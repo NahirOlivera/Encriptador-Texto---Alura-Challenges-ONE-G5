@@ -1,0 +1,252 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: no-repeat;
+	background-image: linear-gradient(to bottom right,#FFC5C5, #81D6D6);
+	background-size: 100vw;
+	font-family: 'Fira Sans';
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  }
+
+.logo {
+  margin-right: 1%;
+}
+
+.titulo{
+	margin-left: 2%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3em;
+	color: white;
+	text-shadow: 4px 4px 2px rgba(241,80,105,0.6);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+  margin: 20px;
+}
+
+.left-section {
+    grid-column: 1 / 2;
+}
+
+.input-text{
+	width: 100%;
+  height: calc(100vh - 320px);
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.5;
+  background: none;
+	outline: none;
+	border: none;
+	resize: none;
+}
+
+.input-text::-webkit-scrollbar, 
+.output-text::-webkit-scrollbar{
+	width:7px;
+	background: none;
+}
+
+.input-text::-webkit-scrollbar-thumb, 
+.output-text::-webkit-scrollbar-thumb{
+	background: rgba(0, 0, 0, 0.10);
+	border-radius: 10px;
+	border-color: black;
+}
+
+::placeholder{
+	color: black;
+	font-family: 'Fira Sans', sans-serif;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.warning{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.warning__icono {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.btn{
+	display: flex;
+	justify-content: space-around;
+}
+
+.btn__encriptar,
+.btn__desencriptar,
+.btn__pegar,
+.btn__copy{
+	background: #F15069;
+	color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  width: 200px;
+	height: 40px;
+	border-color: transparent;
+	border-radius: 10px;
+	outline: none;
+  transition: 1s all;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.btn__encriptar:hover,
+.btn__desencriptar:hover,
+.btn__pegar:hover,
+.btn__copy:hover{
+	box-shadow: 0px 6px 10px 3px rgba(0, 0, 0, 0.15);
+	transform: scale(1.1)
+}
+
+.output-text{
+	position: relative;
+	width: 100%;
+  height: calc(100vh - 286px);
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.5;
+  background: none;
+  background-image: url("./img/muñeco.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+	border-radius: 10px;
+  border-color: #339999;
+	box-shadow: 0px 0px 10px 4px rgba(28, 137, 137, 0.5);
+  outline: none;
+	resize: none;
+}
+
+.right-section div{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+  margin-top: 20px;
+}
+
+.right-section .btn__copy {
+  margin: 0 auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a{
+	margin-right: 20px;
+}
+
+.links__icono_github,
+.links__icono_linkedin{
+	width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: 1s all;
+}
+
+.links__icono_github:hover,
+.links__icono_linkedin:hover{
+	transform: scale(1.1);
+}
+
+footer p{
+  margin: 10px 10px;
+}
+
+/* Estilos para dispositivos medianos */
+
+@media screen and (max-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titulo{
+    font-size: 2em;
+  }
+  
+  .left-section {
+    order: 1;
+  }
+  
+  .right-section {
+    order: 2;
+  }
+  
+  .left-section, .right-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .left-section textarea, .right-section textarea {
+    height: auto;
+  }
+
+
+
+/* Estilos para dispositivos pequeños */
+
+@media screen and (max-width: 820px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titulo{
+  	font-size: 2em;
+  }
+  
+  .left-section {
+    order: 1;
+  }
+  
+  .right-section {
+    order: 2;
+  }
+  
+  .left-section, .right-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .left-section textarea, .right-section textarea {
+    height: auto;
+  }
+
+  .btn{
+  	width: 100%;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  }
+
+  .btn__encriptar,
+  .btn__desencriptar,
+  .btn__pegar{
+  	margin: 20px 0;
+  }
+
+  .output-text{
+  	background-size: 300px;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;1,300&family=Montserrat:wght@600&family=Quicksand&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Encriptador</title>
+</head>
+
+<body>
+	
+	<header class="header">
+		<div class="logo">
+			<a href=""><img src="./img/logo.png" alt="Logo Alura" class="logo"></a>
+		</div>
+		<h1 class="titulo">Encriptador Alura</h1>
+	</header>
+
+	<main>
+		<section class="left-section">
+			<textarea name="input-text" id="text-input" cols="30" rows="10" class="input-text" placeholder="Ingrese el texto aquí" autofocus></textarea>
+			<div class="warning">
+				<img src="./img/icono.png" alt="icono de advertencia" class="warning__icono">
+				<p class="warning__text">Solo se admiten letras minúsculas, sin acentos ni caracteres especiales</p>
+			</div>
+			<div class="btn">
+				<button class="btn__encriptar" onclick="btnEncriptar()">Encriptar</button>
+				<button class="btn__desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+				<button class="btn__pegar" onclick="pegar()">Pegar</button>
+			</div>
+		</section>
+
+		<section class="right-section">
+			<textarea name="output-text" id="text-output" cols="30" rows="10" class="output-text"></textarea>
+			<div>
+				<button class="btn__copy" onclick="copiar()">Copiar</button>
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="links">
+			<a href="https://github.com/NahirOlivera"><img src="./img/github.png" alt="Logo de Git Hub" class="links__icono_github"></a>
+			<a href="https://www.linkedin.com/in/nahir-ianina-olivera-macias"><img src="./img/linkedin.png" alt="Logo de LinkedIn" class="links__icono_linkedin"></a>
+		</div>
+		<p>Diseñado por Nahir Olivera 2023</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
